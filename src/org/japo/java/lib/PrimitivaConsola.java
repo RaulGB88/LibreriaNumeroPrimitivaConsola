@@ -18,7 +18,7 @@ public class PrimitivaConsola {
     public static final Scanner SCN = new Scanner(System.in, "ISO-8859-1");
 
     //Instanciación del Array que contiene el número completo del boleto de Primitiva.
-    public static final int[] NUMERO_BOLETO = new int[5];
+    public static int[] numeroBoleto = new int[5];
 
     //Introducir un número por teclado.
     public static int introducirNumero() {
@@ -60,7 +60,7 @@ public class PrimitivaConsola {
     public static void repetirNumero() {
 
         for (int veces = 0; veces < 5; veces++) {
-            NUMERO_BOLETO[veces] = comprobarNumero();
+            numeroBoleto[veces] = comprobarNumero();
 
         }
     }
@@ -69,7 +69,7 @@ public class PrimitivaConsola {
     public static void mensajePrimitiva() {
 
         repetirNumero();
-        System.out.printf("Número boleto......: %d-%d-%d-%d-%d", NUMERO_BOLETO[0], NUMERO_BOLETO[1], NUMERO_BOLETO[2], NUMERO_BOLETO[3], NUMERO_BOLETO[4]);
+        System.out.printf("Número boleto......: %d-%d-%d-%d-%d", numeroBoleto[0], numeroBoleto[1], numeroBoleto[2], numeroBoleto[3], numeroBoleto[4]);
     }
 
 }
