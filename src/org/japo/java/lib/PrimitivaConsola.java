@@ -38,6 +38,7 @@ public class PrimitivaConsola {
         return numero;
     }
 
+    //Comprueba que el número introducido es realmente un número válido de la Primitiva.
     public static int comprobarNumero() {
 
         int numero;
@@ -55,6 +56,7 @@ public class PrimitivaConsola {
         return numero;
     }
 
+    //Repite el método anterior y lo almacena.
     public static void repetirNumero() {
 
         for (int veces = 0; veces < 5; veces++) {
@@ -63,6 +65,7 @@ public class PrimitivaConsola {
         }
     }
 
+    //Mensaje con el número completo del boleto de Primitiva.
     public static void mensajePrimitiva() {
 
         repetirNumero();
